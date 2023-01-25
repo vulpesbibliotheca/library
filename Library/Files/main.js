@@ -154,7 +154,7 @@ function openDoc(book) {
     url = "./Library/Documents/O Negro - Cruz e Souza.pdf";
   } else {
     if (book == "De amor e amizade"){
-      url = "./Library/Documents/De amor e amizade - Clarice Lispector.pdf";
+      url = "./Library/Documents/De Amor e amizade - Clarice Lispector.pdf";
     } else {
       if (book == "Fazenda Modelo"){
         url = "./Library/Documents/Fazenda Modelo - Chico Buarque de Holanda.pdf";
