@@ -172,7 +172,7 @@ function openDoc(book) {
         url = "./Library/Documents/O Negro - Cruz e Souza.pdf";
         break;
     case "De amor e amizade":
-      url = "./Library/Documents/De Amor e Amizade - Clarice Lispector.pdf";
+      url = "./Library/Documents/De Amor e amizade - Clarice Lispector.pdf";
         break;
     case "Fazenda Modelo":
         url = "./Library/Documents/Fazenda Modelo - Chico Buarque de Holanda.pdf";
