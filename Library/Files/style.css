@@ -1623,6 +1623,12 @@ section {
   border-color: #555 transparent transparent transparent;
 }
 
+.content{ 
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;

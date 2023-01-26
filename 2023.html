@@ -31,9 +31,7 @@
 <style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
 
 <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
-    <button type="button" class="mobile-nav-toggle d-lg-none">
-        <i class="icofont-navigation-menu"></i>
-    </button>
+
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
@@ -50,11 +48,15 @@
                     <li><a href="#obras_acafe" class="d-lg-block">ÍNDICE</a></li>
                     <li><a href="#obras_acafe" class="d-lg-block">ACAFE</a></li>
                     <li><a href="#obras_ufsc" class="d-lg-block">UFSC </a></li>
-                    <li><a href="#obras_ufpr" class="d-lg-block">UFPR</a></li>
-                    <li><a href="#obras_ufrgs" class="d-lg-block">UFRGS</a></li>
-                    <li><a class="popup" onclick="newPopup()">SIMULADOR
-                        <span class="popuptext" id="myPopup">Em Breve...</span>
-                      </a></li>
+                    <li><a class="popup" onclick="newPopup('ufpr_but')">UFPR
+                        <span class="popuptext" id="ufrgs_but">Em Breve...</span>
+                        </a></li>
+                    <li><a class="popup" onclick="newPopup('ufrgs_but')">UFRGS
+                        <span class="popuptext" id="ufrgs_but">Em Breve...</span>
+                        </a></li>
+                    <li><a class="popup" onclick="newPopup('simulador_but')">SIMULADOR
+                        <span class="popuptext" id="simulador_but">Em Breve...</span>
+                        </a></li>
                 </ul>
             </nav>
             <!-- .nav-menu -->
@@ -90,7 +92,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('Negro')" href="#download">Negro</a> 
+                                            <a onclick="openDoc('Negro')" href="#download">Negro</a> 
                                             <br>
                                         </h4>
                                         <br>
@@ -105,7 +107,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('De amor e amizade')" href="#download">De amor e amizade</a>
+                                            <a onclick="openDoc('De amor e amizade')" href="#download">De amor e amizade</a>
                                             <br>
                                         </h4>
                                         <br>
@@ -120,7 +122,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('Fazenda Modelo')" href="#download">Fazenda Modelo</a>
+                                            <a onclick="openDoc('Fazenda Modelo')" href="#download">Fazenda Modelo</a>
                                             <br>
                                         </h4>
                                         <br>
@@ -135,7 +137,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('O vendedor de passados')" href="#download">O vendedor de passados</a>
+                                            <a onclick="openDoc('O vendedor de passados')" href="#download">O vendedor de passados</a>
                                             <br>
                                         </h4>
                                         <br>
@@ -150,7 +152,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('Paulicieia desvairada')" href="#download">Paulicieia desvairada</a>
+                                            <a onclick="openDoc('Paulicieia desvairada')" href="#download">Paulicieia desvairada</a>
                                             <br>
                                         </h4>
                                         <br>
@@ -190,7 +192,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('Negro')" href="#download">Negro</a> 
+                                            <a onclick="openDoc('Negro')" href="#download">Negro</a> 
                                             <br>
                                         </h4>
                                         <br>
@@ -205,7 +207,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('De amor e amizade')" href="#download">De amor e amizade</a>
+                                            <a onclick="openDoc('De amor e amizade')" href="#download">De amor e amizade</a>
                                             <br>
                                         </h4>
                                         <br>
@@ -220,7 +222,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('Fazenda Modelo')" href="#download">Fazenda Modelo</a>
+                                            <a onclick="openDoc('Fazenda Modelo')" href="#download">Fazenda Modelo</a>
                                             <br>
                                         </h4>
                                         <br>
@@ -235,7 +237,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('Ânsia Eterna')" href="#download">Ânsia Eterna</a>
+                                            <a onclick="openDoc('Ânsia Eterna')" href="#download">Ânsia Eterna</a>
                                             <br>
                                         </h4>
                                         <br>
@@ -250,7 +252,7 @@
                                         <br>
                                         <br>
                                         <h4 style="margin: 0">
-                                            <a target="_blank" onclick="openDoc('Paulicieia desvairada')" href="#download">Paulicieia desvairada</a>
+                                            <a onclick="openDoc('Paulicieia desvairada')" href="#download">Paulicieia desvairada</a>
                                             <br>
                                         </h4>
                                         <br>
@@ -282,7 +284,7 @@
                                             <br>
                                             <br>
                                             <h4 style="margin: 0">
-                                                <a target="_blank" onclick="openDoc('Boca do Inferno')" href="#download">Boca do Inferno</a> 
+                                                <a onclick="openDoc('Boca do Inferno')" href="#download">Boca do Inferno</a> 
                                                 <br>
                                             </h4>
                                             <br>
@@ -297,7 +299,7 @@
                                             <br>
                                             <br>
                                             <h4 style="margin: 0">
-                                                <a target="_blank" onclick="openDoc('De amor e amizade')" href="#download">De amor e amizade</a>
+                                                <a onclick="openDoc('De amor e amizade')" href="#download">De amor e amizade</a>
                                                 <br>
                                             </h4>
                                             <br>
@@ -312,7 +314,7 @@
                                             <br>
                                             <br>
                                             <h4 style="margin: 0">
-                                                <a target="_blank" onclick="openDoc('Tratado sobre a Tolerância')" href="#download">Tratado sobre a Tolerância</a>
+                                                <a onclick="openDoc('Tratado sobre a Tolerância')" href="#download">Tratado sobre a Tolerância</a>
                                                 <br>
                                             </h4>
                                             <br>
@@ -327,7 +329,7 @@
                                             <br>
                                             <br>
                                             <h4 style="margin: 0">
-                                                <a target="_blank" onclick="openDoc('Ética a Nicômaco')" href="#download">Ética a Nicômaco</a>
+                                                <a onclick="openDoc('Ética a Nicômaco')" href="#download">Ética a Nicômaco</a>
                                                 <br>
                                             </h4>
                                             <br>
@@ -342,7 +344,7 @@
                                             <br>
                                             <br>
                                             <h4 style="margin: 0">
-                                                <a target="_blank" onclick="openDoc('none')" href="#download"></a>
+                                                <a onclick="openDoc('none')" href="#download"></a>
                                                 <br>
                                             </h4>
                                             <br>
@@ -367,13 +369,18 @@
         <div class="container d-md-flex py-4">
             <div class="mr-md-auto text-center text-md-left">
                 <div class="copyright">
-                    Vulpes Bibliotheca © 2023. Todos os direitos liberados <br><small><strong><span>Desenvolvido por <a target="_blank" href="https://github.com/vulpesbibliotheca">Vulpes Bibliotheca</a></span></strong></small>.
+                    Vulpes Bibliotheca © 2023. Todos os direitos liberados. <br><small><strong><span>Desenvolvido por <a target="_blank" href="https://github.com/vulpesbibliotheca">Vulpes Bibliotheca</a></span></strong></small>.
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a target="_blank" href="#github" ><img src="./Library/Images/icons8-github-16.png"></a>
-                <a target="_blank" href="#ajuda" class="instagram"><img src="./Library/Images/icons8-mail-16.png"></i></a>
-                <a target="_blank" href="#contato" class="youtube"><img src="./Library/Images/icons8-ponto-de-interrogação-16.png"></i></a>
+                <a target = "_blank" href="https://github.com/vulpesbibliotheca" ><img src="./Library/Images/icons8-github-16.png"></a>
+                <a href="#contato" ><img src="./Library/Images/icons8-mail-16.png"></a>
+                <div class="content">
+                    <div class="details"> 
+                        <p>Versão 1.0.2</p>
+                    </div>
+               </div>
+                <a href="#ajuda" class="show"><img src="./Library/Images/icons8-ponto-de-interrogação-16.png"></a>
             </div>
         </div>
         <!-- end barra final -->
@@ -384,7 +391,7 @@
         <i><img src="./Library/Images/icons8-seta-para-recolher-32.png"></i>
     </a>
     
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Vendor JS Files -->
     <script src="./Library/Files/jquery.min.js"></script>
     <script src="./Library/Files/jquery.easing.min.js"></script>
@@ -402,11 +409,15 @@
                     <li><a href="#obras_acafe" class="d-lg-block">ÍNDICE</a></li>
                     <li><a href="#obras_acafe">ACAFE</a></li>
                     <li><a href="#obras_ufsc" class="d-lg-block">UFSC </a></li>
-                    <li><a href="#obras_ufpr">UFPR</a></li>
-                    <li><a href="#obras_ufrgs">UFRGS</a></li>
-                    <li><a class="popup" onclick="newPopup()">SIMULADOR
-                        <span class="popuptext" id="myPopup">Em Breve...</span>
-                      </a></li>
+                    <li><a class="popup" onclick="newPopup('ufpr_but_mob')">UFPR
+                        <span class="popuptext" id="ufpr_but_mob">Em Breve...</span>
+                        </a></li>
+                    <li><a class="popup" onclick="newPopup('ufrgs_but_mob')">UFRGS
+                        <span class="popuptext" id="ufrgs_but_mob">Em Breve...</span>
+                        </a></li>
+                    <li><a class="popup" onclick="newPopup('simulador_but_mob')">SIMULADOR
+                        <span class="popuptext" id="simulador_but_mob">Em Breve...</span>
+                        </a></li>
                 </ul>
             </nav><div class="mobile-nav-overly"></div>
     </body>

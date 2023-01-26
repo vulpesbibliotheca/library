@@ -44,7 +44,7 @@
 
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-toggle i').toggleClass('');
           $('.mobile-nav-overly').fadeOut();
         }
         return false;
@@ -58,12 +58,12 @@
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i><img src="./Library/Images/icons8-menu-arredondado-32.png"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav-toggle', function(e) {
       $('body').toggleClass('mobile-nav-active');
-      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+      $('.mobile-nav-toggle i').toggleClass('');
       $('.mobile-nav-overly').toggle();
     });
 
@@ -78,7 +78,7 @@
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-toggle i').toggleClass('');
           $('.mobile-nav-overly').fadeOut();
         }
       }
@@ -137,54 +137,67 @@
 
 })(jQuery);
 
+//Versão '?'
+$(document).ready(function() {
+  //variaveis utilizadas
+  var $conteudo = $(".content");
+  var $details = $(".details > p");
+  var $show = $(".show");
+  
+  //esconde os detalhes
+  $details.hide();
+   
+  //evento de mostrar e esconder ao clicar
+   $show.click(function(e) {
+     e.preventDefault();  
+    $details.stop(true, false).slideToggle("slow");
+  });
+});
+
 // New PopUp
-function newPopup(){
-  var popup = document.getElementById("myPopup");
+function newPopup(elementIdName){
+  var popup = document.getElementById(elementIdName);
   popup.classList.toggle("show");
+  setTimeout(function(){ popup.classList.toggle("show"); }, 3000);
 }
 
 // URLs
-var url = "https://www.google.com";
+var url = "none";
 var btn = document.querySelector("#btn");
-
 
 function openDoc(book) {
 
-  if (book == "Negro") {
-    url = "./Library/Documents/O Negro - Cruz e Souza.pdf";
-  } else {
-    if (book == "De amor e amizade"){
-      url = "./Library/Documents/De Amor e amizade - Clarice Lispector.pdf";
-    } else {
-      if (book == "Fazenda Modelo"){
+  switch (book) {
+    case "Negro":
+        url = "./Library/Documents/O Negro - Cruz e Souza.pdf";
+        break;
+    case "De amor e amizade":
+      url = "./Library/Documents/De Amor e Amizade - Clarice Lispector.pdf";
+        break;
+    case "Fazenda Modelo":
         url = "./Library/Documents/Fazenda Modelo - Chico Buarque de Holanda.pdf";
-      } else {
-        if (book == "O vendedor de passados"){
-          url = "./Library/Documents/O Vendedor De Passados - Jose Eduardo Agualusa.pdf";
-        } else {
-          if (book == "Paulicieia desvairada"){
-            url = "./Library/Documents/Paulicéia Desvairada, de Mário de Andrade.pdf";
-          } else {
-            if (book == "Ânsia Eterna"){
-              url = "./Library/Documents/Ânsia Eterna - Júlia Lopes de Almeida.pdf";
-            } else {
-              if (book == "Boca do Inferno"){
-                url = "./Library/Documents/Boca do Inferno - Ana Miranda.pdf";
-              } else {
-              if (book == "Tratado sobre a Tolerância"){
-                url = "./Library/Documents/Tratado sobre a tolerância - Voltaire.pdf";
-            } else {
-              if (book == "Ética a Nicômaco"){
-                url = "./Library/Documents/Ética a Nicômaco - Aristóteles.pdf";
-                  }  
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+        break;
+    case "O vendedor de passados":
+        url = "./Library/Documents/O Vendedor De Passados - Jose Eduardo Agualusa.pdf";
+        break;
+    case "Paulicieia desvairada":
+        url = "./Library/Documents/Paulicéia Desvairada, de Mário de Andrade.pdf";
+        break;
+    case "Ânsia Eterna":
+        url = "./Library/Documents/Ânsia Eterna - Julia Lopes de Almeida.pdf";
+        break;
+    case "Boca do Inferno":
+        url = "Ju./Library/Documents/Boca do Inferno - Ana Miranda.pdflho";
+        break;
+    case "Tratado sobre a Tolerância":
+        url = "./Library/Documents/Tratado sobre a tolerância - Voltaire.pdf";
+        break;
+    case "Ética a Nicômaco":
+        url = "./Library/Documents/Ética a Nicômaco - Aristóteles.pdf";
+        break;
+    default:
+        url = "none";
+}
 
   var win = window.open(url, '_blank');
   win.focus();
