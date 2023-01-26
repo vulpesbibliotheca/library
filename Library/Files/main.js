@@ -187,7 +187,7 @@ function openDoc(book) {
         url = "./Library/Documents/Ânsia Eterna - Julia Lopes de Almeida.pdf";
         break;
     case "Boca do Inferno":
-        url = "Ju./Library/Documents/Boca do Inferno - Ana Miranda.pdflho";
+        url = "./Library/Documents/Boca do Inferno - Ana Miranda.pdf";
         break;
     case "Tratado sobre a Tolerância":
         url = "./Library/Documents/Tratado sobre a tolerância - Voltaire.pdf";
