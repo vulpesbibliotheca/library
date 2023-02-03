@@ -195,6 +195,24 @@ function openDoc(book) {
     case "Ética a Nicômaco":
         url = "./Library/Documents/Ética a Nicômaco - Aristóteles.pdf";
         break;
+    case "Ursula":
+        url = "./Library/Documents/ursula_obras_reis.pdf";
+        break;
+    case "Torto Arado":
+        url = "./Library/Documents/Torto Arado - Itamar Vieira Junior.pdf";
+        break;
+    case "joao do rio":
+        url = "./Library/Documents/A alma encantadora das ruas_2.pdf";
+        break;
+    case "Velhos":
+      url = "./Library/Documents/Velhos.pdf";
+      break;
+    case "O Ano":
+      url = "https://aplauso.imprensaoficial.com.br/edicoes/12.0.813.445/12.0.813.445.pdf";
+      break;
+    case "O mez da gripe":
+    url = "./Library/Documents/O_mez_da_grippe_e_outros_livros_de_Valen.pdf";
+      break
     default:
         url = "none";
 }
